@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список університетів</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="list-styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <nav class="nav-menu">
+                <a href="index.html">Головна</a>
+                <a href="#">Університети</a>
+                <a href="#">Курси</a>
+                <a href="#">Гранти</a>
+            </nav>
+            <div class="hamburger">
+                ☰
+            </div>
+        </div>
+            <!--тут за потреби додати кнопки реєстрації/авторизації-->
+    </header>
+    <main>
+        <div class="container search-container">
+            <input id="search-input" type="text">
+            <div class="buttons">
+                <button class="btn search-btn">Пошук</button>
+                <button class="btn filter-btn">Фільтри</button>
+            </div>
+        </div>
+
+        <div class="container catalogue">
+            <div class="item">
+                <div class="main-info">
+                    <img src="./images/university-photos/university-photo1.jpg" alt="">
+                    <div class="description">
+                        <span>Назва університету</span>
+                        <div class="info">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p>Країна, місто</p>
+                        </div>
+                        <div class="info">
+                            <i class="bi bi-currency-dollar"></i>
+                            <p>10000</p>
+                        </div>
+                        <div class="info">
+                            <i class="bi bi-star-fill"></i>
+                            <p>4.8</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="details-dark">Деталі</a>
+            </div>
+
+            <div class="item">
+                <div class="main-info">
+                    <img src="./images/university-photos/university-photo1.jpg" alt="">
+                    <div class="description">
+                        <span>Назва університету</span>
+                        <div class="info">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p>Країна, місто</p>
+                        </div>
+                        <div class="info">
+                            <i class="bi bi-currency-dollar"></i>
+                            <p>10000</p>
+                        </div>
+                        <div class="info">
+                            <i class="bi bi-star-fill"></i>
+                            <p>4.8</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="details-dark">Деталі</a>
+            </div>
+            <div class="item">
+                <div class="main-info">
+                    <img src="./images/university-photos/university-photo1.jpg" alt="">
+                    <div class="description">
+                        <span>Назва університету</span>
+                        <div class="info">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p>Країна, місто</p>
+                        </div>
+                        <div class="info">
+                            <i class="bi bi-currency-dollar"></i>
+                            <p>10000</p>
+                        </div>
+                        <div class="info">
+                            <i class="bi bi-star-fill"></i>
+                            <p>4.8</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="details-dark">Деталі</a>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="page-number"><i class="bi bi-arrow-left"></i></button>
+
+            <button class="page-number active-page">1</button>
+            
+            <div class="range-icon">
+                ...
+            </div>
+
+            <button class="page-number">10</button>
+
+            <button class="page-number"><i class="bi bi-arrow-right"></i></button>
+        </div>
+    </main>
+</body>
+</html>

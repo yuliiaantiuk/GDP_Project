@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <nav class="nav-menu">
+                <a href="#">Головна</a>
+                <a href="university-list.html">Університети</a>
+                <a href="#">Курси</a>
+                <a href="#">Гранти</a>
+            </nav>
+            <div class="hamburger">
+                ☰
+            </div>
+        </div>
+            <!--тут за потреби додати кнопки реєстрації/авторизації-->
+    </header>
+
+    <main>
+        <div class="container hero">
+            <img src="./images/main-hero.png" alt="Study in Europe" loading="lazy">
+            <div class="caption">
+              <h1>Навчайся в Європі!</h1>
+              <p>Отримайте якісну європейську освіту з міжнародним визнанням та перспективами для кар’єрного росту. Навчання в Європі – це інвестиція у ваше майбутнє!</p>
+              <!--кнопка для отримання консультацій за потреби-->
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="container advantage-list">
+            <h2>Переваги навчання в Європі</h2>
+            <ul>
+                <li><span>Якість освіти</span> – європейські дипломи визнаються у всьому світі</li>
+                <li><span>Подорожі та нові враження</span> – зручний шенгенський простір для подорожей по Європі</li>
+                <li><span>Доступність освіти</span> – стипендії, гранти та бюджетні програми для іноземних студентів</li>
+                <li><span>Можливості для кар’єри</span> – стажування, практика та перспективи працевлаштування в ЄС</li>
+                <li><span>Міжнародне середовище</span> – навчання разом зі студентами з різних країн, обмін культурним досвідом</li>
+            </ul>
+          </div>
+
+          <hr>
+
+          <div class="container service-list">
+            <h2>Послуги</h2>
+            <div class="cards">
+                <!--тут будуть посилання на каталоги-->
+                <div class="card">
+                    <img src="./images/card1.jpg" alt="Зображення">
+                    <h3>Вступ у Європі</h3>
+                    <p>Допоможемо обрати університет, підготувати документи та пройти всі етапи вступу. Підтримка на кожному кроці – від вибору країни до отримання студентської візи.</p>
+                    <a href="university-list.html" class="details">Деталі</a>
+                </div>
+                <div class="card">
+                    <img src="./images/card2.jpg" alt="Зображення">
+                    <h3>Підготовчі курси</h3>
+                    <p>Пропонуємо мовні та професійні курси для успішного вступу та навчання за кордоном. Обирайте онлайн чи офлайн формат відповідно до ваших потреб.</p>
+                    <a href="#" class="details">Деталі</a>
+                </div>
+                <div class="card">
+                    <img src="./images/card3.jpg" alt="Зображення">
+                    <h3>Гранти та стипендії</h3>
+                    <p>Підберемо фінансові можливості для покриття витрат на навчання та проживання. Допоможемо правильно оформити заявку та збільшити шанси на отримання фінансування.</p>
+                    <a href="#" class="details">Деталі</a>
+                </div>
+            </div>
+          </div>
+
+          <!--блок відгуків, якщо буде потрібно-->
+          <hr>
+
+          <div class="container reviews-container">
+            <h2>Відгуки</h2>
+            <div class="review">
+                <p class="review-author">Тест Тестович</p>
+                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur veritatis aperiam, obcaecati optio provident delectus impedit vero. Eius qui optio numquam nihil facere repellendus, sit rerum iure? Quisquam, excepturi!</p>
+            </div>
+            <div class="review">
+                <p class="review-author">Тест Тестович</p>
+                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur veritatis aperiam, obcaecati optio provident delectus impedit vero. Eius qui optio numquam nihil facere repellendus, sit rerum iure? Quisquam, excepturi!</p>
+            </div>
+            <div class="review">
+                <p class="review-author">Тест Тестович</p>
+                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur veritatis aperiam, obcaecati optio provident delectus impedit vero. Eius qui optio numquam nihil facere repellendus, sit rerum iure? Quisquam, excepturi!</p>
+            </div>
+
+            <form id="review-form" action="#">
+                <label for="author-name">Ваше ім'я</label>
+                <input id="author-name" type="text" required>
+                <label for="review-content">Залиште відгук</label>
+                <textarea id="review-content" required></textarea>
+                <button id="submit-review-btn" type="submit">Залишити відгук</button>
+            </form>
+          </div>
+
+          <hr>
+
+          <div class="container faq-container">
+            <h2>Часті запитання</h2>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Які проходять консультації?</button>
+                    <div class="accordion-content">
+                        <p>Тут текст про консультації...</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Які документи потрібні?</button>
+                    <div class="accordion-content">
+                        <p>Тут список необхідних документів...</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Які ще запитання мені тут придумати?</button>
+                    <div class="accordion-content">
+                        <p>Блок відповідей… Lorem ipsum dolor sit amet...</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </main>
+
+    <footer>
+        <h3>Залишились питання?</h3>
+        <a href="https://web.telegram.org/k/#@Dufa8" class="support-link">Зв'яжіться з нами</a>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>

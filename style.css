@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff1ee;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #615a8f;
+    padding: 20px 30px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-menu{
+    display: flex;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.nav-menu a:hover{
+    background-color: #4a456d;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff1ee;
+}
+
+.container{
+    padding: 40px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.hero img{
+    border-radius: 30px;
+    width: 600px;
+    height: 500px;
+}
+
+.hero .caption{
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.hero .caption h1{
+    font-size: 56px;
+}
+
+.hero .caption p{
+    font-size: 20px;
+}
+
+hr{
+    background-color: #615a8f;
+    height: 3px;
+}
+
+h2{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.advantage-list ul{
+    list-style-type: none;
+}
+
+.advantage-list ul li{
+    background-color: #615a8f;
+    color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 20px;
+    width: calc(100% - var(--step));
+}
+
+li:nth-child(1) { --step: 60%; }
+li:nth-child(2) { --step: 45%; }
+li:nth-child(3) { --step: 30%; }
+li:nth-child(4) { --step: 15%; }
+li:nth-child(5) { --step: 0%; }
+
+span{
+    font-weight: bold;
+}
+
+.advantage-list ul li:hover{
+    background-color: #4a456d;
+}
+
+.service-list{
+    max-width: 100vw;
+    overflow-x: auto;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 30%;
+    background: #615a8f;
+    border: 3px solid #4a456d;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover{
+    background-color: #4a456d;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff1ee;
+}
+
+.card p {
+    font-size: 16px;
+    color: #fff1ee;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.details{
+    width: 100%;
+    padding: 10px 100px;
+    background-color: #f2deda;
+    border: 3px solid #4a456d;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    color: #4a456d;
+    font-weight: bold;
+}
+
+.details:hover{
+    background-color: #393458;
+    color: #fff1ee;
+}
+
+.reviews-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review{
+    border-left: 3px solid #4a456d;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.review-author{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#review-form{
+    border-top: 1px solid #4a456d;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+#review-form label{
+    font-size: 18px;
+}
+
+#author-name{
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #4a456d;
+}
+
+#review-content{
+    height: 40px;
+    min-height: 40px;
+    max-height: 800px;
+    padding: 5px;
+    border: 2px solid #4a456d;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+#submit-review-btn{
+    width: 20%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: #615a8f;
+    color: #fff1ee;
+    border: 3px solid #4a456d;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#submit-review-btn:hover{
+    background-color: #4a456d;
+}
+
+.faq-container{
+    width: 100%;
+}
+
+.accordion {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border: 2px solid #4a456d;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    color: #fff1ee;
+    font-weight: bold;
+    background: #615a8f;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.accordion-header:hover {
+    background: #4a456d;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+    background: #fff1ee;
+    border: 2px solid #4a456d;
+}
+
+footer{
+    background-color: #615a8f;
+    border-top: 3px solid #4a456d;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+}
+
+footer h3{
+    color: #fff1ee;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.support-link{
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #4a456d;
+    border: 3px solid #393458;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff1ee;
+}
+
+.support-link:hover{
+    background-color: #393458;
+}
+
+@media (max-width: 700px) {
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #615a8f;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-menu a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .container{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hero{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hero img{
+        max-width: 100%;
+        height: auto
+    }
+
+    .hero .caption{
+        width: 100%;
+        height: auto;
+        gap: 10px;
+    }
+    
+    .hero .caption h1{
+        font-size: 42px;
+        text-align: center;
+    }
+    
+    .hero .caption p{
+        font-size: 16px;
+    }
+    
+    hr{
+        margin: 10px 0;
+    }
+    
+    h2{
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    
+    .advantage-list ul li{
+        width: 100%;
+    }
+    
+    .cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    #submit-review-btn{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px){   
+    .hero{
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .hero img{
+        max-width: 100%;
+        height: auto
+    }
+
+    .hero .caption{
+        width: 100%;
+        height: auto;
+        gap: 10px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .card {
+        width: 50vw;
+    }
+}
+
+@media(min-width: 2000px){
+    .nav-menu a{
+        font-size: 36px;
+    }
+
+    .hero{
+        align-items: center;
+    }
+
+    .hero img{
+        width: 50vw;
+        height: auto;
+    }
+
+    .hero .caption{
+        width: 40vw;
+    }
+
+    .hero .caption h1{
+        font-size: 72px;
+    }
+
+    .hero .caption p{
+        font-size: 36px !important;
+    }
+
+    h2{
+        font-size: 64px;
+    }
+
+    .advantage-list ul li{
+        font-size: 36px;
+    }
+
+    .card img{
+        height: 500px;
+    }
+
+    .card h3{
+        font-size: 48px;
+    }
+
+    .card p{
+        font-size: 28px;
+    }
+
+    .review-author{
+        font-size: 36px;
+    }
+    
+    #review-form{
+        padding-top: 30px;
+    }
+    
+    #review-form label{
+        font-size: 25px;
+    }
+    
+    #author-name{
+        height: 40px;
+    }
+    
+    #review-content{
+        height: 60px;
+    }
+
+    #submit-review-btn{
+        font-size: 24px;
+    }
+    
+    .accordion-header {
+        font-size: 24px;
+    }
+    
+    footer h3{
+        font-size: 28px;
+    }
+    
+    .support-link{
+        font-size: 20px;
+    }
+}

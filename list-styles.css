@@ -1,0 +1,129 @@
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#search-input{
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid #615a8f;
+    width: 70vw;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.btn{
+    background-color: #615a8f;
+    border: 3px solid #4a456d;
+    padding: 10px 20px;
+    color: #fff1ee;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #4a456d;
+}
+
+.search-btn{
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.filter-btn{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.catalogue{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #4a456d;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.main-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.main-info img{
+    width: 200px;
+    height: 150;
+    border-radius: 25px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info{
+    display: flex;
+    gap: 5px;
+}
+
+.details-dark{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: medium;
+    background-color: #615a8f;
+    color: #fff1ee;
+    border-radius: 25px;
+    padding: 10px 50px;
+    border: 3px solid #4a456d;
+}
+
+.details-dark:hover{
+    background-color: #4a456d;
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.page-number{
+    background-color: #615a8f;
+    border-radius: 10px;
+    border: 3px solid #4a456d;
+    padding: 5px;
+    color: #fff1ee;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.page-number:hover{
+    background-color: #4a456d;
+}
+
+.active-page{
+    background-color: #4a456d;
+}
+
+.range-icon{
+    color: #4a456d;
+    font-size: 18px;
+    font-weight: bold;
+}
