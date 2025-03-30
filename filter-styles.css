@@ -1,0 +1,116 @@
+.filter-container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsla(248, 22%, 35%, 0.742);
+    display: none;
+}
+
+.show-filters {
+    display: block;
+}
+
+.filter-window{
+    width: 30%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cancel-btn-container{
+    width: 100%;
+    padding: 10px;
+    background-color: #615a8f;
+    border: 3px solid #4a456d;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cancel-btn-container span{
+    color: #fff1ee;
+    font-size: 20px;
+}
+
+.cancel-btn{
+    background-color: #615a8f;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff1ee;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cancel-btn:hover{
+    background-color: #4a456d;
+}
+
+.choice{
+    font-size: 16px;
+}
+
+.filter-input{
+    border-radius: 5px;
+    border: 2px solid #615a8f;
+    padding: 5px;
+}
+
+.submit-filters-btn{
+    border-radius: 5px;
+    background-color: #615a8f;
+    border: 2px solid #4a456d;
+    padding: 5px 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #fff1ee;
+    cursor: pointer;
+}
+
+.submit-filters-btn:hover{
+    background-color: #4a456d;
+}
+
+.filter-list{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter{
+    display: flex;
+    background-color: #615a8f;
+    padding: 5px 10px;
+    border: 3px solid #4a456d;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff1ee;
+    font-size: 16px;
+    gap: 5px;
+}
+
+.cancel-filter{
+    margin-left: 10px;
+    background-color: #615a8f;
+    border: none;
+    border-radius: 10px;
+    padding: 3px; 
+    font-size: 16px;
+    color: #fff1ee;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cancel-filter:hover{
+    background-color: #4a456d;
+}

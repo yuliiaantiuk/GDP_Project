@@ -6,6 +6,7 @@
     <title>Список університетів</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="list-styles.css">
+    <link rel="stylesheet" href="filter-styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
@@ -23,12 +24,92 @@
         </div>
             <!--тут за потреби додати кнопки реєстрації/авторизації-->
     </header>
+
+    <div class="filter-container">
+        <div class="filter-window">
+            <div class="cancel-btn-container">
+                <span>Виберіть фільтри</span>
+                <button class="cancel-btn"><i class="bi bi-x-circle"></i></button>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Країна</button>
+                    <div class="accordion-content filter-content">
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>Австрія</label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>Нідерланди</label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>Словаччина</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Рейтинг</button>
+                    <div class="accordion-content filter-content">
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>4 - 5 <i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>3 - 4.9 <i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>2 - 3.9 <i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label><= 1.9 <i class="bi bi-star-fill"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Вартість</button>
+                    <div class="accordion-content">
+                        <div class="price-selector">
+                            <label for="min-price">від</label>
+                            <input id="min-price" class="filter-input" type="number" required>
+                            <label for="max-price">до</label>
+                            <input id="max-price" class="filter-input" type="number" required>
+                        </div>
+                        <button class="submit-filters-btn">Застосувати фільтри</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <div class="container search-container">
             <input id="search-input" type="text">
             <div class="buttons">
                 <button class="btn search-btn">Пошук</button>
                 <button class="btn filter-btn">Фільтри</button>
+            </div>
+        </div>
+
+        <div class="filter-list">
+            <div class="filter">
+                <i class="bi bi-geo-alt-fill"></i>
+                <p>Австрія</p>
+                <button class="cancel-filter"><i class="bi bi-x-circle"></i></button>
+            </div>
+            <div class="filter">
+                <p>4 - 5</p>
+                <i class="bi bi-star-fill"></i>
+                <button class="cancel-filter"><i class="bi bi-x-circle"></i></button>
+            </div>
+            <div class="filter">
+                <i class="bi bi-currency-dollar"></i>
+                <p>від 5000 до 15000</p>
+                <button class="cancel-filter"><i class="bi bi-x-circle"></i></button>
             </div>
         </div>
 
@@ -113,5 +194,7 @@
             <button class="page-number"><i class="bi bi-arrow-right"></i></button>
         </div>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
