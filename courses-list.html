@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Список університетів</title>
+    <title>Список курсів</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="list-styles.css">
     <link rel="stylesheet" href="filter-styles.css">
@@ -14,8 +14,8 @@
         <div class="menu-container">
             <nav class="nav-menu">
                 <a href="index.html">Головна</a>
-                <a href="#">Університети</a>
-                <a href="courses-list.html">Курси</a>
+                <a href="university-list.html">Університети</a>
+                <a href="#">Курси</a>
                 <a href="grant-list.html">Гранти</a>
             </nav>
             <div class="hamburger">
@@ -71,6 +71,36 @@
                     </div>
                 </div>
                 <div class="accordion-item">
+                    <button class="accordion-header">Рівень підготовки</button>
+                    <div class="accordion-content filter-content">
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>Початковий рівень</label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>Середній рівень</label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>Високий рівень</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Формат</button>
+                    <div class="accordion-content filter-content">
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>Онлайн</label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>Офлайн</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
                     <button class="accordion-header">Вартість</button>
                     <div class="accordion-content">
                         <div class="price-selector">
@@ -118,7 +148,10 @@
                 <div class="main-info">
                     <img src="./images/university-photos/university-photo1.jpg" alt="">
                     <div class="description">
-                        <span>Назва університету</span>
+                        <div class="name-format">
+                            <span>Назва курсу</span>
+                            <div class="format"><p>Офлайн</p></div>
+                        </div>
                         <div class="info">
                             <i class="bi bi-geo-alt-fill"></i>
                             <p>Країна, місто</p>
@@ -133,14 +166,21 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="details-dark">Деталі</a>
+                <div class="right-info">
+                    <a href="#" class="details-dark">Деталі</a>
+                    <p>1.06.2025 - 1.07.2025</p>
+                </div>
             </div>
 
             <div class="item">
                 <div class="main-info">
                     <img src="./images/university-photos/university-photo1.jpg" alt="">
                     <div class="description">
-                        <span>Назва університету</span>
+                        <div class="name-format">
+                            <span>Назва курсу</span>
+                            <div class="format"><p>Онлайн</p></div>
+                        </div>
+                        
                         <div class="info">
                             <i class="bi bi-geo-alt-fill"></i>
                             <p>Країна, місто</p>
@@ -155,13 +195,19 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="details-dark">Деталі</a>
+                <div class="right-info">
+                    <a href="#" class="details-dark">Деталі</a>
+                    <p>1.06.2025 - 1.07.2025</p>
+                </div>
             </div>
             <div class="item">
                 <div class="main-info">
                     <img src="./images/university-photos/university-photo1.jpg" alt="">
                     <div class="description">
-                        <span>Назва університету</span>
+                        <div class="name-format">
+                            <span>Назва курсу</span>
+                            <div class="format"><p>Онлайн</p></div>
+                        </div>
                         <div class="info">
                             <i class="bi bi-geo-alt-fill"></i>
                             <p>Країна, місто</p>
@@ -176,7 +222,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="details-dark">Деталі</a>
+                <div class="right-info">
+                    <a href="#" class="details-dark">Деталі</a>
+                    <p>1.06.2025 - 1.07.2025</p>
+                </div>
             </div>
         </div>
 
