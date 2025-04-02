@@ -57,6 +57,12 @@
     font-size: 16px;
 }
 
+.price-selector{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .filter-input{
     border-radius: 5px;
     border: 2px solid #615a8f;
@@ -80,6 +86,7 @@
 
 .filter-list{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -113,4 +120,36 @@
 
 .cancel-filter:hover{
     background-color: #4a456d;
+}
+
+@media (max-width: 700px){    
+    .filter-window{
+        width: 90%;
+    }
+
+    .price-selector{
+        gap: 2px;
+    }
+
+    .filter-input{
+        border-radius: 5px;
+        border: 2px solid #615a8f;
+        padding: 3px;
+    }
+
+    .filter-list{
+        width: 98.5%;
+    }
+    
+    .filter{
+        padding: 2px;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+    
+    .cancel-filter{
+        margin-left: 5px;
+        padding: 2px; 
+        font-size: 14px;
+    }
 }
