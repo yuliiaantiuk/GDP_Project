@@ -324,6 +324,10 @@ footer h3{
     background-color: #393458;
 }
 
+.active-nav-link{
+    font-weight: bold;
+}
+
 @media (max-width: 700px) {
     *{
         box-sizing: border-box;

@@ -40,3 +40,7 @@
 .info-lst{
     list-style-position: inside;
 }
+
+.container hr{
+    margin: 15px 0;
+}
