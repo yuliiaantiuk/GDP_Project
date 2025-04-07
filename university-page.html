@@ -14,10 +14,53 @@
     <header>
         <div class="menu-container">
             <h3 class="name">Назва університету</h3>
-            <!--Перехід на сторінку назад по натисканню-->
-            <button class="cancel-btn"><i class="bi bi-x-circle"></i></button>
+            <a href="university-list.html" class="back-btn"><i class="bi bi-x-circle"></i></a>
         </div>
     </header>
+
+    <div class="filter-container">
+        <div class="filter-window">
+            <div class="cancel-btn-container">
+                <span>Виберіть фільтри</span>
+                <button class="cancel-btn"><i class="bi bi-x-circle"></i></button>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Рейтинг</button>
+                    <div class="accordion-content filter-content">
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>4 - 5 <i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>3 - 4.9 <i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label>2 - 3.9 <i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox">
+                            <label><= 1.9 <i class="bi bi-star-fill"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Вартість</button>
+                    <div class="accordion-content">
+                        <div class="price-selector">
+                            <label for="min-price">від</label>
+                            <input id="min-price" class="filter-input" type="number" required>
+                            <label for="max-price">до</label>
+                            <input id="max-price" class="filter-input" type="number" required>
+                        </div>
+                        <button class="submit-filters-btn">Застосувати фільтри</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main>
         <div class="container hero">
@@ -70,11 +113,6 @@
 
         <div class="filter-list">
             <div class="filter">
-                <i class="bi bi-geo-alt-fill"></i>
-                <p>Австрія</p>
-                <button class="cancel-filter"><i class="bi bi-x-circle"></i></button>
-            </div>
-            <div class="filter">
                 <p>4 - 5</p>
                 <i class="bi bi-star-fill"></i>
                 <button class="cancel-filter"><i class="bi bi-x-circle"></i></button>
@@ -93,12 +131,16 @@
                     <div class="description">
                         <span>Назва факультету</span>
                         <div class="info">
+                            <i class="bi bi-star-fill"></i>
+                            <p>4.8</p>
+                        </div>
+                        <div class="info">
                             <i class="bi bi-currency-dollar"></i>
                             <p>10000</p>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="details-dark">Деталі</a>
+                <a href="faculty-page.html" class="details-dark">Деталі</a>
             </div>
 
             <div class="item">
@@ -107,12 +149,16 @@
                     <div class="description">
                         <span>Назва факультету</span>
                         <div class="info">
+                            <i class="bi bi-star-fill"></i>
+                            <p>4.8</p>
+                        </div>
+                        <div class="info">
                             <i class="bi bi-currency-dollar"></i>
                             <p>10000</p>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="details-dark">Деталі</a>
+                <a href="faculty-page.html" class="details-dark">Деталі</a>
             </div>
 
             <div class="item">
@@ -121,12 +167,16 @@
                     <div class="description">
                         <span>Назва факультету</span>
                         <div class="info">
+                            <i class="bi bi-star-fill"></i>
+                            <p>4.8</p>
+                        </div>
+                        <div class="info">
                             <i class="bi bi-currency-dollar"></i>
                             <p>10000</p>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="details-dark">Деталі</a>
+                <a href="faculty-page.html" class="details-dark">Деталі</a>
             </div>
         </div>
 
@@ -148,24 +198,73 @@
 
         <div class="container">
             <h2>Схожі університети</h2>
-            <div class="recomended">
-                <button class="navigation-btn"><i class="bi bi-arrow-left arrow"></i></button>
-                <div class="cards">
-                    <div class="card">
-                        <img src="./images/university-photos/university-photo1.jpg" alt="Зображення">
-                        <a href="university-list.html" class="details">Назва університету</a>
-                    </div>
-                    <div class="card">
-                        <img src="./images/university-photos/university-photo1.jpg" alt="Зображення">
-                        <a href="courses-list.html" class="details">Назва університету</a>
-                    </div>
-                    <div class="card">
-                        <img src="./images/university-photos/university-photo1.jpg" alt="Зображення">
-                        <a href="grant-list.html" class="details">Назва університету</a>
+
+            <div class="catalogue">
+            <div class="item">
+                <div class="main-info">
+                    <img src="./images/university-photos/university-photo1.jpg" alt="">
+                    <div class="description">
+                        <span>Назва університету</span>
+                        <div class="info">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p>Країна, місто</p>
+                        </div>
+                        <div class="info">
+                            <i class="bi bi-currency-dollar"></i>
+                            <p>10000</p>
+                        </div>
+                        <div class="info">
+                            <i class="bi bi-star-fill"></i>
+                            <p>4.8</p>
+                        </div>
                     </div>
                 </div>
-                <button class="navigation-btn"><i class="bi bi-arrow-right arrow"></i></button>
+                <a href="university-page.html" class="details-dark">Деталі</a>
             </div>
+
+            <div class="item">
+                <div class="main-info">
+                    <img src="./images/university-photos/university-photo1.jpg" alt="">
+                    <div class="description">
+                        <span>Назва університету</span>
+                        <div class="info">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p>Країна, місто</p>
+                        </div>
+                        <div class="info">
+                            <i class="bi bi-currency-dollar"></i>
+                            <p>10000</p>
+                        </div>
+                        <div class="info">
+                            <i class="bi bi-star-fill"></i>
+                            <p>4.8</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="university-page.html" class="details-dark">Деталі</a>
+            </div>
+            <div class="item">
+                <div class="main-info">
+                    <img src="./images/university-photos/university-photo1.jpg" alt="">
+                    <div class="description">
+                        <span>Назва університету</span>
+                        <div class="info">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p>Країна, місто</p>
+                        </div>
+                        <div class="info">
+                            <i class="bi bi-currency-dollar"></i>
+                            <p>10000</p>
+                        </div>
+                        <div class="info">
+                            <i class="bi bi-star-fill"></i>
+                            <p>4.8</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="university-page.html" class="details-dark">Деталі</a>
+            </div>
+        </div>
         </div>
     </main>
 
