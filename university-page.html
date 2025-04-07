@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сторінка університету</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="page-styles.css">
+    <link rel="stylesheet" href="filter-styles.css">
+    <link rel="stylesheet" href="list-styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <h3 class="name">Назва університету</h3>
+            <!--Перехід на сторінку назад по натисканню-->
+            <button class="cancel-btn"><i class="bi bi-x-circle"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container hero">
+            <img src="./images/university-photos/university-photo1.jpg" alt="Study in Europe" loading="lazy">
+            <div class="caption">
+              <h1>Назва університету</h1>
+              <div class="description">
+                <div class="info">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p>Країна, місто</p>
+                </div>
+                <div class="info">
+                    <i class="bi bi-currency-dollar"></i>
+                    <p>10000</p>
+                </div>
+                <div class="info">
+                    <i class="bi bi-star-fill"></i>
+                    <p>4.8</p>
+                </div>
+                <div class="info">
+                    <a href="#">Офіційний сайт</a>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="info-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum, mi nec consequat venenatis, ex turpis porttitor neque, eu fermentum mauris mi vitae mauris. Quisque turpis purus, aliquet non elit vel, tempor sollicitudin velit. Nam purus turpis, tincidunt eget ornare et, luctus vitae libero. Nullam lobortis nulla sit amet augue viverra, ac scelerisque nulla tincidunt. Vestibulum ornare eget mi et finibus. Ut quis pretium metus. Vivamus non malesuada lectus. Etiam non tristique purus, vitae lacinia lacus. Aenean non auctor sapien. Praesent porta id nunc nec euismod. Donec porta, tortor quis tristique rutrum, dolor odio ultricies urna, at egestas enim risus in mi.
+
+                Ut blandit fringilla pharetra. Donec scelerisque sapien sit amet ante pellentesque vestibulum. Nullam porta eleifend felis, sit amet interdum urna sollicitudin at. Nunc id commodo tortor. Aliquam erat volutpat. Integer in finibus eros. Fusce fermentum leo eu gravida mattis. Suspendisse dignissim augue ornare libero elementum, sed suscipit turpis faucibus. Quisque in tortor libero. Mauris quis pellentesque neque. Donec hendrerit, neque in volutpat dapibus, nibh neque accumsan augue, et porttitor tortor risus in dolor. Proin eu sapien sed sem rhoncus commodo et ac mi. Curabitur efficitur libero porttitor ipsum semper pulvinar. Vestibulum vel tincidunt metus.
+                
+                Vestibulum posuere gravida tellus, nec dictum dui commodo vitae. Ut at malesuada neque, vel euismod dolor. Vestibulum vulputate mollis nulla, vestibulum consectetur ligula. Aliquam mi eros, porta eu ante eget, luctus eleifend magna. Cras et nunc nec lorem sollicitudin cursus. Sed facilisis tristique massa ac condimentum. Vestibulum ullamcorper neque quis sagittis posuere. Vivamus tempor gravida scelerisque. Proin sollicitudin lectus in rutrum pretium. Aenean finibus magna mattis lorem auctor ornare. Integer ultrices tristique libero sit amet convallis. Sed lacinia malesuada facilisis. Aliquam erat volutpat. Phasellus dignissim vel neque at venenatis. Phasellus ut blandit arcu. Duis orci sem, finibus vitae venenatis vel, tempor et ex.
+                
+                Integer in lectus tortor. Duis malesuada tempor diam, quis accumsan urna sodales et. Quisque libero est, feugiat quis sapien ut, lacinia dapibus massa. Aliquam fermentum mauris non auctor vulputate. Maecenas aliquam volutpat ante volutpat congue. Sed ultrices, nunc in dignissim egestas, diam enim consequat odio, ut sodales nulla lectus placerat risus. Vestibulum sagittis, nibh eget hendrerit iaculis, ligula urna sollicitudin nisi, luctus imperdiet sem libero et felis.
+                
+                Mauris placerat risus turpis, at faucibus nibh tempor sagittis. Vestibulum vel sem nibh. Praesent posuere purus aliquam felis fringilla, sit amet gravida ex finibus. Donec ex ipsum, fermentum non efficitur sed, elementum eu velit. Donec porta bibendum porttitor. Nullam molestie diam et tincidunt dignissim. Phasellus sed ullamcorper lectus. In nulla eros, ultricies vitae pulvinar vel, pellentesque eu ante. Nam rhoncus leo orci, quis tincidunt purus suscipit ut. Nunc ornare vel dui in suscipit. Phasellus eu sagittis lectus. Donec faucibus faucibus lectus, et tempus lectus bibendum tincidunt.</p>
+          </div>
+
+          <hr>
+
+          <div class="container search-container">
+            <input id="search-input" type="text">
+            <div class="buttons">
+                <button class="btn search-btn">Пошук</button>
+                <button class="btn filter-btn">Фільтри</button>
+            </div>
+        </div>
+
+        <div class="filter-list">
+            <div class="filter">
+                <i class="bi bi-geo-alt-fill"></i>
+                <p>Австрія</p>
+                <button class="cancel-filter"><i class="bi bi-x-circle"></i></button>
+            </div>
+            <div class="filter">
+                <p>4 - 5</p>
+                <i class="bi bi-star-fill"></i>
+                <button class="cancel-filter"><i class="bi bi-x-circle"></i></button>
+            </div>
+            <div class="filter">
+                <i class="bi bi-currency-dollar"></i>
+                <p>від 5000 до 15000</p>
+                <button class="cancel-filter"><i class="bi bi-x-circle"></i></button>
+            </div>
+        </div>
+
+        <div class="container catalogue">
+            <div class="item">
+                <div class="main-info">
+                    <img src="./images/university-photos/university-photo1.jpg" alt="">
+                    <div class="description">
+                        <span>Назва факультету</span>
+                        <div class="info">
+                            <i class="bi bi-currency-dollar"></i>
+                            <p>10000</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="details-dark">Деталі</a>
+            </div>
+
+            <div class="item">
+                <div class="main-info">
+                    <img src="./images/university-photos/university-photo1.jpg" alt="">
+                    <div class="description">
+                        <span>Назва факультету</span>
+                        <div class="info">
+                            <i class="bi bi-currency-dollar"></i>
+                            <p>10000</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="details-dark">Деталі</a>
+            </div>
+
+            <div class="item">
+                <div class="main-info">
+                    <img src="./images/university-photos/university-photo1.jpg" alt="">
+                    <div class="description">
+                        <span>Назва факультету</span>
+                        <div class="info">
+                            <i class="bi bi-currency-dollar"></i>
+                            <p>10000</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="details-dark">Деталі</a>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="page-number"><i class="bi bi-arrow-left"></i></button>
+
+            <button class="page-number active-page">1</button>
+            
+            <div class="range-icon">
+                ...
+            </div>
+
+            <button class="page-number">10</button>
+
+            <button class="page-number"><i class="bi bi-arrow-right"></i></button>
+        </div>
+
+        <hr>
+
+        <div class="container">
+            <h2>Схожі університети</h2>
+            <div class="recomended">
+                <button class="navigation-btn"><i class="bi bi-arrow-left arrow"></i></button>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./images/university-photos/university-photo1.jpg" alt="Зображення">
+                        <a href="university-list.html" class="details">Назва університету</a>
+                    </div>
+                    <div class="card">
+                        <img src="./images/university-photos/university-photo1.jpg" alt="Зображення">
+                        <a href="courses-list.html" class="details">Назва університету</a>
+                    </div>
+                    <div class="card">
+                        <img src="./images/university-photos/university-photo1.jpg" alt="Зображення">
+                        <a href="grant-list.html" class="details">Назва університету</a>
+                    </div>
+                </div>
+                <button class="navigation-btn"><i class="bi bi-arrow-right arrow"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Залишились питання?</h3>
+        <a href="https://web.telegram.org/k/#@Dufa8" class="support-link">Зв'яжіться з нами</a>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

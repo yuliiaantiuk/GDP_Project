@@ -81,6 +81,11 @@
     gap: 5px;
 }
 
+.info a{
+    color: black;
+    font-size: 20px;
+}
+
 .details-dark{
     text-decoration: none;
     font-size: 20px;

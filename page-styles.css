@@ -1,0 +1,27 @@
+.name{
+    color: #fff1ee;
+}
+
+.info-text{
+    padding: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.recomended{
+    display: flex;
+    align-items: center;
+}
+
+.arrow{
+    color: #fff1ee;
+    font-weight: bolder;
+}
+
+.navigation-btn{
+    text-align: center;
+    padding: 2px 5px;
+    border: 2px solid #4a456d;
+    background-color:  #4a456d;
+    border-radius: 10px;
+}
